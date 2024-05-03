@@ -93,6 +93,16 @@ body {
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: solid blueviolet;
+  
+}
+.categories p:hover{
+    transition-duration: 1s;
+    background-color:transparent;
+   color: blueviolet;
+   border: solid blueviolet;
+    cursor: pointer;
+
 }
 
 .sale-image img {
@@ -108,6 +118,21 @@ body {
     height: 15%;
     top: 25%;
     left: 10%;
+   animation-name: effect;
+   animation-duration: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+   
+}
+@keyframes effect{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .recommended {
